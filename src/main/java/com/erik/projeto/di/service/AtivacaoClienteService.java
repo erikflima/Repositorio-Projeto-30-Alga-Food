@@ -1,15 +1,23 @@
 package com.erik.projeto.di.service;
 import org.springframework.stereotype.Component;
 import com.erik.projeto.di.modelo.Cliente;
-import com.erik.projeto.di.notificacao.NotificadorEmail;
+import com.erik.projeto.di.notificacao.Notificador;
 
 
 @Component
 public class AtivacaoClienteService {
 
 	
-	private NotificadorEmail notificador;
+	private Notificador notificador;
 	
+	
+	public AtivacaoClienteService( Notificador notificador ) {
+
+		this.notificador = notificador;
+	}
+
+
+	//-----------------------------------------------//
 	
 	public void ativar( Cliente cliente ){
 		
