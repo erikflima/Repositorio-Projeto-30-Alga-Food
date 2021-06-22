@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+	<modelVersion>4.0.0</modelVersion>
+	<name>30-Alga-Food</name>
+	<description>Projeto do curso &quot; Especialista Spring REST - Alga Works&quot; versao de 21/01/2021</description>
+
+	<groupId>com.erik</groupId>           <!-- Site da empresa dona da aplicação. -->
+	<artifactId>30-Alga-Food</artifactId> <!-- O nome do arquivo final da aplicação após fazer o build do projeto. -->
+	<version>1.0.0-SNAPSHOT</version>     <!-- Versao do projeto. -->
+	<packaging>jar</packaging>            <!-- Tipo de empacotamento do projeto '.jar' ou '.war'. -->	
+
+	<properties>
+		<java.version>16</java.version>
+	</properties>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.1</version> <!-- Versao do Spring que esta sendo utilizada no projeto -->
+		<relativePath/>          <!-- lookup parent from repository -->
+	</parent>
+	
+		
+	<dependencies>
+
+
+		<dependency> <!-- Bibliotecas adicioanis e uteis do Spring. Recomendavel sempre adiciona-las em qualquer projeto. -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+			
+		<dependency> <!-- Bibliotecas que tem anotacoes da parte Web do Spring. Exemplo "@RestController", "@ResquestMapping", "@PathVariable" etc. Ou seja, anotacoes que coloco nas classes Controllers e tal. -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+
+		<dependency> <!-- Subdependencia do Spring Boot Pai com as bibliotecas de test do Spring. -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+	</build>
+
+</project>
