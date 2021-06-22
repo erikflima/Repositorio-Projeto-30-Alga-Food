@@ -28,7 +28,6 @@
 		
 	<dependencies>
 
-
 		<dependency> <!-- Bibliotecas adicioanis e uteis do Spring. Recomendavel sempre adiciona-las em qualquer projeto. -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
