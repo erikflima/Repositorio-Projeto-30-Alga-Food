@@ -8,9 +8,12 @@ public class MeuPrimeiroController {
 	public MeuPrimeiroController() {
 	}
 	
+	//-------------------------------------//
+	
 	@GetMapping("/hello")
 	public String hello(){
 		
 		return "Hello Erik";
 	}
+	
 }
